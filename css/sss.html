@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="syntax.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="base1.css">
+    <script src="../js/jquery.js"></script>
+</head>
+<body>
+<div class=" container">
+
+<!--<div id="artical-detail">-->
+    <!--<h4>各种常见的鼠标悬停css3动画效果</h4>-->
+    <!--<p>平时需要用到的鼠标悬停效果，基本上都是css3的结合。代码就不放了，直接右键看即可。</p>-->
+
+    <!--<div class="anima-box">-->
+        <!--<ul>-->
+            <!--<li class="col-md-4 col-sm-6 marl">-->
+                <!--<div>-->
+                    <!--<img src="../image/s2.jpg" alt="配图">-->
+                    <!--<div class="show">-->
+                        <!--<h2>Hello,<strong>World</strong></h2>-->
+                        <!--<p class="slidep">This Is What U Want!</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</li>-->
+            <!--<li class="col-md-4 col-sm-6 gradli">-->
+                <!--<div>-->
+                    <!--<img src="../image/s3.jpg" alt="配图">-->
+                    <!--<div class="show">-->
+                        <!--<h2>Hello,<strong>World</strong></h2>-->
+                        <!--<p class="slidep">This Is What U Want!</p>-->
+                    <!--</div>-->
+                    <!--<div class="cover"></div>-->
+                <!--</div>-->
+            <!--</li>-->
+            <!--<li class="col-md-4 col-sm-6 bd-scale scale">-->
+                <!--<div>-->
+                    <!--<img src="../image/s4.jpg" alt="配图">-->
+                    <!--<div class="show">-->
+                        <!--<h2>Hello,<strong>World</strong></h2>-->
+                        <!--<p class="slidep">This Is What U Want!</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</li>-->
+            <!--<li class="col-md-4 col-sm-6 bd-scale scale1 scale">-->
+                <!--<div>-->
+                    <!--<img src="../image/s5.jpg" alt="配图">-->
+                    <!--<div class="show">-->
+                        <!--<h2>Hello,<strong>World</strong></h2>-->
+                        <!--<p class="slidep">This Is What U Want!</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</li>-->
+            <!--<li class="col-md-4 col-sm-6 widthl">-->
+                <!--<div>-->
+                    <!--<img src="../image/s8.jpg" alt="配图">-->
+                    <!--<div class="show">-->
+                        <!--<h2>Hello,<strong>World</strong></h2>-->
+                        <!--<p class="slidep">This Is What U Want!</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</li>-->
+            <!--<li class="col-md-4 col-sm-6 imgup">-->
+                <!--<div>-->
+                    <!--<img src="../image/s12.jpg" alt="配图">-->
+                    <!--<div class="show trans">-->
+                        <!--<h1>Hello,<strong>World</strong></h1>-->
+                    <!--</div>-->
+                    <!--<div class="pdiv trans">-->
+                        <!--<h3>More msgs show here</h3>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</li>-->
+        <!--</ul>-->
+    <!--</div>-->
+<!--</div>-->
+</div>>
+
+</body>
+<script>
+    $(document).ready(function () {
+        $(".header-box").addClass("fadein");
+        $("#artical-detail > p").append("<br/><br/>");
+
+        $(".anima-box li").each(function () {
+            $(this).find("img,.show p,.show h2").addClass("trans");
+        });
+        var imgHei = $(".anima-box li>div").width();
+        $(".anima-box li>div").css("height",imgHei*0.8);
+    });
+</script>
+<script>
+    (function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+</html>
